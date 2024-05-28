@@ -1,0 +1,145 @@
+body
+{
+    background-color: tomato;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+h1
+{
+    font-size: 40px;
+    font-family:monospace;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 2px  white;
+    text-shadow: -4px 2px black;
+}
+#gameBoard
+{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.square
+{
+    width: 100px;
+    height: 100px;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle
+{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 15px solid  red;
+    box-sizing: border-box;
+}
+
+.cross
+{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    transform: rotate(45deg);
+}
+.cross::before, .cross::after
+{
+    content: "";
+    position: absolute;
+    background-color: blue;
+}
+.cross::before
+{
+    left: 50%;
+    width: 30%;
+    margin-left: -15%;
+    height: 100%;
+}
+.cross::after
+{
+    top: 50%;
+    height: 30%;
+    margin-top: -15%;
+    width: 100%;
+}
+
+#info
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: white;
+}
+#score
+{
+    width: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+}
+.div
+{
+    width: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+}
+#btn
+{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 20px;
+}
+#btn:hover
+{
+    cursor: pointer;
+    background-color: lightseagreen;
+    border-color: white;
+    color: red;
+    scale: 1.2;
+    box-shadow: 3px 2px 2px black, -3px 2px 2px black;
+}
+#btn2
+{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 20px;
+}
+#btn2:hover
+{
+    cursor: pointer;
+    background-color: lightseagreen;
+    border-color: white;
+    color: red;
+    scale: 1.2;
+    box-shadow: 3px 2px 2px black, -3px 2px 2px black;
+}
